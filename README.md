@@ -1,2 +1,2 @@
-# spotify-journal
-Spotify web app to visualize and document recent listening habits
+# base-spotify-angular-app
+Boilerplate Angular app for Spotify auth
