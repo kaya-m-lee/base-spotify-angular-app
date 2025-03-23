@@ -25,4 +25,12 @@ export const routes: Routes = [
       );
     },
   },
+  {
+    path: 'logout',
+    loadComponent: () => {
+      return import('./components/logout/logout.component').then(
+        (m) => m.LogoutComponent
+      );
+    },
+  },
 ];

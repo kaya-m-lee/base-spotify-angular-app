@@ -10,7 +10,6 @@ import { environment } from '../../environments/environment';
 export class SpotifyAuthService {
   codeVerifier: string;
 
-  // put in environment variables after
   clientId = environment.clientId;
   redirectUri = 'http://localhost:4200/loggedin';
   //   scope = 'user-read-private user-read-email';

@@ -25,6 +25,11 @@ export class LoggedinComponent implements OnInit {
     const tokenUrl = new URLSearchParams(window.location.search);
     const returnedState = tokenUrl.get('state');
     const returnedCode = tokenUrl.get('code');
+    const returnedError = tokenUrl.get('error');
+
+    if (returnedError) {
+      this.router.navigate(['/login']);
+    }
 
     if (
       returnedState &&
